@@ -1,0 +1,334 @@
+[
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getVotingList",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getClosedList",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getPendingList",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getPendingStr",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "qid",
+				"type": "bytes32"
+			}
+		],
+		"name": "getQuestion",
+		"outputs": [
+			{
+				"name": "text",
+				"type": "string"
+			},
+			{
+				"name": "answerList",
+				"type": "bytes32[]"
+			},
+			{
+				"name": "voteRight",
+				"type": "bytes32"
+			},
+			{
+				"name": "viewRight",
+				"type": "bytes32"
+			},
+			{
+				"name": "status",
+				"type": "bytes32"
+			},
+			{
+				"name": "typeTag",
+				"type": "int256"
+			},
+			{
+				"name": "createTimestamp",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "qid",
+				"type": "bytes32"
+			},
+			{
+				"name": "text",
+				"type": "string"
+			},
+			{
+				"name": "voteRight",
+				"type": "bytes32"
+			},
+			{
+				"name": "viewRight",
+				"type": "bytes32"
+			},
+			{
+				"name": "status",
+				"type": "bytes32"
+			},
+			{
+				"name": "typeTag",
+				"type": "int256"
+			},
+			{
+				"name": "timestamp",
+				"type": "string"
+			}
+		],
+		"name": "createQuestion",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "status",
+				"type": "bytes32"
+			}
+		],
+		"name": "getQidOfStatus",
+		"outputs": [
+			{
+				"name": "qestionList",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "aid",
+				"type": "bytes32"
+			}
+		],
+		"name": "getAnswer",
+		"outputs": [
+			{
+				"name": "text",
+				"type": "string"
+			},
+			{
+				"name": "createTimestamp",
+				"type": "string"
+			},
+			{
+				"name": "updateTimestamp",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "inB1",
+				"type": "bytes32"
+			},
+			{
+				"name": "inB2",
+				"type": "bytes32"
+			}
+		],
+		"name": "isEqualBytes32",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "qid",
+				"type": "bytes32"
+			},
+			{
+				"name": "text",
+				"type": "string"
+			},
+			{
+				"name": "voteRight",
+				"type": "bytes32"
+			},
+			{
+				"name": "viewRight",
+				"type": "bytes32"
+			},
+			{
+				"name": "status",
+				"type": "bytes32"
+			},
+			{
+				"name": "typeTag",
+				"type": "int256"
+			},
+			{
+				"name": "timestamp",
+				"type": "string"
+			}
+		],
+		"name": "updateQuestion",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getVotingStr",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "aid",
+				"type": "bytes32"
+			},
+			{
+				"name": "text",
+				"type": "string"
+			},
+			{
+				"name": "timestamp",
+				"type": "string"
+			}
+		],
+		"name": "updateAnswer",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "qid",
+				"type": "bytes32"
+			},
+			{
+				"name": "aid",
+				"type": "bytes32"
+			},
+			{
+				"name": "text",
+				"type": "string"
+			},
+			{
+				"name": "timestamp",
+				"type": "string"
+			}
+		],
+		"name": "addAnswer",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	}
+]

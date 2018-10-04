@@ -1,0 +1,50 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "โหวตเรื่อง",
+        "weight": "bold",
+        "size": "xl"
+      },
+      {
+        "type": "text",
+        "text": "กรุณาเลือกเรื่องที่ต้องการโหวต",
+        "color": "#999999",
+        "size": "sm",
+        "flex": 1
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "lg",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "action": {
+              "type": "message",
+              "label": "เลือกตั้งเลขาธิการพรรค",
+              "text": "เลือก 1"
+            }
+          },
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "action": {
+              "type": "message",
+              "label": "นโยบายการทำงาน",
+              "text": "เลือก 2"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
