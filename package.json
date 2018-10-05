@@ -8,7 +8,7 @@
   },
   "author": "Teerapong Sansaneeyawat",
   "license": "ISC",
-  "dependencies": {
+  "dependencies":  {
     "@line/bot-sdk": "^6.2.1",
     "actions-on-google": "^2.3.0",
     "body-parser": "^1.18.2",
@@ -22,7 +22,7 @@
     "messaging-api-line": "^0.7.8",
     "request-promise": "^4.2.2",
     "solc": "^0.4.25",
+    "web3": "^1.0.0-beta.36",
     "web3-utils": "^1.0.0-beta.33"
-
   }
 }
