@@ -12,7 +12,7 @@ var VoteController = function () {
   let abi = JSON.parse(source)
 
   let contractAddress = '0x8a1dbaa294042cea091bd64ff27f50e08fd3415f'
-  let accounts = ['0xa1f8ce35a36ad05740f3e1ed65457b7474ac56a2', '0x29712c53f7dcd420b584025fd7bc35e430755416']
+  let accounts = ['0x14a9186d31a85f5494c9f367123abe4c77659b37', '0x8401623f3f4ea409cab1ca28b007fb18d03b39e8']
   let web3 = new Web3()
 
 
@@ -133,7 +133,7 @@ var VoteController = function () {
             result.role = response.data.role
           }
 
-          return web3.eth.personal.unlockAccount(accounts[0], 'password', 300)
+          return web3.eth.personal.unlockAccount(accounts[0], 'teenueng35', 300)
         })
         .then((response) => {
           console.log('unlockAccount OK =>', response)

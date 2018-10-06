@@ -11,7 +11,7 @@ var UserAccountController = function () {
   let abi = JSON.parse(source)
 
   let contractAddress = '0x4bdb980485038ac9d12eaabfba7ff4fe2024a7a1'
-  let accounts = ['0xa1f8ce35a36ad05740f3e1ed65457b7474ac56a2', '0x29712c53f7dcd420b584025fd7bc35e430755416']
+  let accounts = ['0x14a9186d31a85f5494c9f367123abe4c77659b37', '0x8401623f3f4ea409cab1ca28b007fb18d03b39e8']
   let web3 = new Web3()
 
 
@@ -325,7 +325,7 @@ var UserAccountController = function () {
 
           // let address = web3.eth.personal.newAccount('password');
           //return address
-          createUser.userAddress = "0xB8e99F74FB2B525cDd8894c4099fB2D6320e4884";
+          createUser.userAddress = accounts[0];
           return Promise.resolve(createUser.userAddress)
         })
         .then((address) => {

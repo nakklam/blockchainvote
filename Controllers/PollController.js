@@ -11,7 +11,7 @@ var PollController = function () {
   let abi = JSON.parse(source)
 
   let contractAddress = '0xb849e3def0c94b2a57fac8bcfc6ee9c53c9c3190'
-  let accounts = ['0xa1f8ce35a36ad05740f3e1ed65457b7474ac56a2', '0x29712c53f7dcd420b584025fd7bc35e430755416']
+  let accounts = ['0x14a9186d31a85f5494c9f367123abe4c77659b37', '0x8401623f3f4ea409cab1ca28b007fb18d03b39e8']
   let web3 = new Web3()
 
 
