@@ -10,7 +10,7 @@ var UserAccountController = function () {
   let source = fs.readFileSync('./Contacts/UserAccount.json')
   let abi = JSON.parse(source)
 
-  let contractAddress = '0x19f59c736b20b1bbd26827ad9c821f10e1245d8c'
+  let contractAddress = '0x4bdb980485038ac9d12eaabfba7ff4fe2024a7a1'
   let accounts = ['0xa1f8ce35a36ad05740f3e1ed65457b7474ac56a2', '0x29712c53f7dcd420b584025fd7bc35e430755416']
   let web3 = new Web3()
 
@@ -61,7 +61,7 @@ var UserAccountController = function () {
           }
 
           console.log('unlock Account')
-          return web3.eth.personal.unlockAccount(accounts[0], 'password', 300)
+          return web3.eth.personal.unlockAccount(accounts[0], 'teenueng35', 300)
         })
         .then((response) => {
           console.log('unlockAccount OK =>', response)
@@ -317,7 +317,7 @@ var UserAccountController = function () {
           }*/
 
           console.log('unlock Account')
-          return web3.eth.personal.unlockAccount(accounts[0], 'password', 300)
+          return web3.eth.personal.unlockAccount(accounts[0], 'teenueng35', 300)
         })
         .then((response) => {
           console.log('unlockAccount OK =>', response)

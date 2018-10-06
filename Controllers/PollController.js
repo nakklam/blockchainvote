@@ -10,7 +10,7 @@ var PollController = function () {
   let source = fs.readFileSync('./Contacts/Poll.json')
   let abi = JSON.parse(source)
 
-  let contractAddress = '0x84639702cd0d8098c1c724625a4e5375a7a64f00'
+  let contractAddress = '0xb849e3def0c94b2a57fac8bcfc6ee9c53c9c3190'
   let accounts = ['0xa1f8ce35a36ad05740f3e1ed65457b7474ac56a2', '0x29712c53f7dcd420b584025fd7bc35e430755416']
   let web3 = new Web3()
 
@@ -32,7 +32,7 @@ var PollController = function () {
     var operation = (resolve, reject) => {
       console.log('unlock Account')
 
-      web3.eth.personal.unlockAccount(accounts[0], 'password', 300)
+      web3.eth.personal.unlockAccount(accounts[0], 'teenueng35', 300)
         .then((response) => {
           console.log('unlockAccount OK =>', response)
           console.log("qid=> begin")
@@ -314,7 +314,7 @@ var PollController = function () {
     }
     var operation = (resolve, reject) => {
       console.log('unlock Account')
-      web3.eth.personal.unlockAccount(accounts[0], 'password', 300)
+      web3.eth.personal.unlockAccount(accounts[0], 'teenueng35', 300)
         .then((response) => {
           console.log('unlockAccount OK =>', response)
           console.log("qid=> begin")
