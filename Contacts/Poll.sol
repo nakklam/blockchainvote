@@ -38,15 +38,15 @@ contract Poll {
     bytes32 _pendingStr;
     bytes32 _votingStr;
     bytes32 _closedStr;
-    bytes32 _AllStr;
-    bytes32 _ActiveStr;
+    bytes32 _allStr;
+    bytes32 _activeStr;
 
     constructor() public {
         _pendingStr = stringToBytes32("pending");
         _votingStr = stringToBytes32("voting");
         _closedStr = stringToBytes32("closed");
-        _AllStr = stringToBytes32("all");
-        _ActiveStr = stringToBytes32("active");
+        _allStr = stringToBytes32("all");
+        _activeStr = stringToBytes32("active");
     }
 
     function getVotingList() public constant returns (bytes32[] result){
@@ -234,13 +234,14 @@ contract Poll {
         }else if(isEqualBytes32(status,_activeStr)){
             // closed & voting status
             bytes32[] memory _resultList = new bytes32[](_closedList.length+_votingList.length);
-            int length = _closedList.length;
-            for(int i=0; i<length; i++){
+            uint length = _closedList.length;
+            uint i;
+            for(i=0; i<length; i++){
                 _resultList[i] = _closedList[i];
             }
             length = _votingList.length;
 
-            for(int i = 0; i <length; i++){
+            for(i = 0; i <length; i++){
                 _resultList[_closedList.length+i] = _votingList[i];
             }
 
