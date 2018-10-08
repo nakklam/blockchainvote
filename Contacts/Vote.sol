@@ -3,7 +3,7 @@ pragma solidity ^0.4.25;
 // ----------------------------------------------------------------------------
 // Contract : Vote
 //
-// Deployed to : 0x8a1dbaa294042cea091bd64ff27f50e08fd3415f
+// Deployed to : 0xdb5e26868af4fff2cffd0e2463db32ce3d87229b
 //
 // copyright 2018 Teerapong Sansaneeyawat
 // ----------------------------------------------------------------------------

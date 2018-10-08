@@ -11,7 +11,7 @@ var VoteController = function () {
   let source = fs.readFileSync('./Contacts/Vote.json')
   let abi = JSON.parse(source)
 
-  let contractAddress = '0x8a1dbaa294042cea091bd64ff27f50e08fd3415f'
+  let contractAddress = '0xdb5e26868af4fff2cffd0e2463db32ce3d87229b'
   let accounts = ['0x14a9186d31a85f5494c9f367123abe4c77659b37', '0x8401623f3f4ea409cab1ca28b007fb18d03b39e8']
   let web3 = new Web3()
 
