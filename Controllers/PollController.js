@@ -10,7 +10,8 @@ var PollController = function () {
   let source = fs.readFileSync('./Contacts/Poll.json')
   let abi = JSON.parse(source)
 
-  let contractAddress = '0x45aeb1b8fde3beec74aa00bb2139f3fae98dd8e0'
+  //let contractAddress = '0x45aeb1b8fde3beec74aa00bb2139f3fae98dd8e0'
+  let contractAddress = '0x7a46b8c5f61c01514a9e788ebc5a516b02f7a7f7'
   let accounts = ['0x14a9186d31a85f5494c9f367123abe4c77659b37', '0x8401623f3f4ea409cab1ca28b007fb18d03b39e8']
   let web3 = new Web3()
 
@@ -200,6 +201,30 @@ var PollController = function () {
     }
 
     return new Promise(operation);
+  }
+
+  var getQuestionOfStatus = function (req, res) {
+    console.log("getQuestionOfStatus")
+    let status = req.query.status
+    console.log("status=>",status);
+
+    if (status === undefined || status === null || status.length <= 0) {
+      res.status(200).send({
+        resultCode: 1,
+        resultstr: _error(1),
+        data: null,
+      })
+      return
+    }
+
+    _getQuestionOfStatus(status)
+      .then((response) => {
+        res.status(200).send(response)
+      })
+      .catch((error) => {
+        console.log('_getQuestion error=>', error)
+        res.status(200).send(error)
+      })
   }
 
   var _getQuestion = (qid) => {
@@ -417,6 +442,7 @@ var PollController = function () {
   return ({
     createQuestion: createQuestion,
     getQuestion: getQuestion,
+    getQuestionOfStatus: getQuestionOfStatus,
     updateQuestion: updateQuestion,
     _getQuestionOfStatus: _getQuestionOfStatus,
     _getQuestion: _getQuestion,

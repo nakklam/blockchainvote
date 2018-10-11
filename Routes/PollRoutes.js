@@ -13,6 +13,7 @@ var routes = function(controller){
   router.post('/createQuestion',controller.createQuestion)
   router.get('/getQuestion',controller.getQuestion)
   router.post('/updateQuestion',controller.updateQuestion)
+  router.get('/getQuestionOfStatus',controller.getQuestionOfStatus)
 
   return router;
 };
