@@ -15,9 +15,8 @@ var VoteController = function () {
   let contractAddress = '0x4bdb980485038ac9d12eaabfba7ff4fe2024a7a1'
   let accounts = ['0x14a9186d31a85f5494c9f367123abe4c77659b37', '0x8401623f3f4ea409cab1ca28b007fb18d03b39e8']
   let web3 = new Web3()
-
-
-  web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'))
+  
+  web3.setProvider(new web3.providers.HttpProvider('http://localhost:8501'))
   let voteContract = new web3.eth.Contract(abi, contractAddress, {from: web3.eth.coinbase, gasPrice: '4700000'})
   if (!voteContract) {
     throw('Error: Contract equal null.')

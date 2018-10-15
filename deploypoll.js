@@ -5,7 +5,7 @@ const solc = require('solc');
 /*
 * connect to ethereum node
 */
-const ethereumUri = 'http://localhost:8545';
+const ethereumUri = 'http://localhost:8501';
 const address = '0x14a9186d31a85f5494c9f367123abe4c77659b37'; // user
 
 let web3 = new Web3();

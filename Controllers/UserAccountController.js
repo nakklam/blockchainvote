@@ -16,7 +16,7 @@ var UserAccountController = function () {
   let web3 = new Web3()
 
 
-  web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'))
+  web3.setProvider(new web3.providers.HttpProvider('http://localhost:8501'))
   let ucContract = new web3.eth.Contract(abi, contractAddress, {from: web3.eth.coinbase, gasPrice: '4700000'})
   if (!ucContract) {
     throw('Error: Contract equal null.')
