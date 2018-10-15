@@ -12,7 +12,7 @@ var VoteController = function () {
   let abi = JSON.parse(source)
 
   //let contractAddress = '0xdb5e26868af4fff2cffd0e2463db32ce3d87229b'
-  let contractAddress = '0x4bdb980485038ac9d12eaabfba7ff4fe2024a7a1'
+  let contractAddress = '0x4Bdb980485038ac9d12EaaBfbA7ff4fe2024A7a1'
   let accounts = ['0x14a9186d31a85f5494c9f367123abe4c77659b37', '0x8401623f3f4ea409cab1ca28b007fb18d03b39e8']
   let web3 = new Web3()
   

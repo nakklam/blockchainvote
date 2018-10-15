@@ -11,7 +11,7 @@ var UserAccountController = function () {
   let abi = JSON.parse(source)
 
   //let contractAddress = '0x8d91f91a68b5397af79051de73898817b178b94f'
-  let contractAddress = '0xa16f91dd92171e0002c21c635a35675ba3aeebfe'
+  let contractAddress = '0xA16f91Dd92171E0002C21C635a35675ba3aeeBFE'
   let accounts = ['0x14a9186d31a85f5494c9f367123abe4c77659b37', '0x8401623f3f4ea409cab1ca28b007fb18d03b39e8']
   let web3 = new Web3()
 
