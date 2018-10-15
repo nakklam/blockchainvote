@@ -1,0 +1,348 @@
+[
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "inCid",
+                "type": "bytes32"
+            }
+        ],
+        "name": "getUserByCID",
+        "outputs": [
+            {
+                "name": "found",
+                "type": "bool"
+            },
+            {
+                "name": "userAddress",
+                "type": "address"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "password",
+                "type": "string"
+            },
+            {
+                "name": "lineid",
+                "type": "bytes32"
+            },
+            {
+                "name": "memberid",
+                "type": "bytes32"
+            },
+            {
+                "name": "role",
+                "type": "bytes32"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "inLineID",
+                "type": "bytes32"
+            },
+            {
+                "name": "inCid",
+                "type": "bytes32"
+            }
+        ],
+        "name": "isFound",
+        "outputs": [
+            {
+                "name": "found",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "inLineID",
+                "type": "bytes32"
+            }
+        ],
+        "name": "getUserDetailByLineID",
+        "outputs": [
+            {
+                "name": "found",
+                "type": "bool"
+            },
+            {
+                "name": "nameTitle",
+                "type": "bytes32"
+            },
+            {
+                "name": "groupid",
+                "type": "bytes32"
+            },
+            {
+                "name": "email",
+                "type": "string"
+            },
+            {
+                "name": "sex",
+                "type": "bytes1"
+            },
+            {
+                "name": "birthdate",
+                "type": "string"
+            },
+            {
+                "name": "createTimestamp",
+                "type": "string"
+            },
+            {
+                "name": "updateTimestamp",
+                "type": "string"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "inAddress",
+                "type": "address"
+            }
+        ],
+        "name": "getUserByAdress",
+        "outputs": [
+            {
+                "name": "found",
+                "type": "bool"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "password",
+                "type": "string"
+            },
+            {
+                "name": "cid",
+                "type": "bytes32"
+            },
+            {
+                "name": "lineid",
+                "type": "bytes32"
+            },
+            {
+                "name": "memberid",
+                "type": "bytes32"
+            },
+            {
+                "name": "role",
+                "type": "bytes32"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "userAddress",
+                "type": "address"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "password",
+                "type": "string"
+            },
+            {
+                "name": "cid",
+                "type": "bytes32"
+            },
+            {
+                "name": "lineid",
+                "type": "bytes32"
+            },
+            {
+                "name": "groupid",
+                "type": "bytes32"
+            },
+            {
+                "name": "memberid",
+                "type": "bytes32"
+            },
+            {
+                "name": "email",
+                "type": "string"
+            },
+            {
+                "name": "sex",
+                "type": "bytes1"
+            },
+            {
+                "name": "birthdate",
+                "type": "string"
+            },
+            {
+                "name": "role",
+                "type": "bytes32"
+            },
+            {
+                "name": "timestamp",
+                "type": "string"
+            }
+        ],
+        "name": "createUser",
+        "outputs": [
+            {
+                "name": "result",
+                "type": "int256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "lineid",
+                "type": "bytes32"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "password",
+                "type": "string"
+            },
+            {
+                "name": "cid",
+                "type": "bytes32"
+            },
+            {
+                "name": "groupid",
+                "type": "bytes32"
+            },
+            {
+                "name": "memberid",
+                "type": "bytes32"
+            },
+            {
+                "name": "email",
+                "type": "string"
+            },
+            {
+                "name": "sex",
+                "type": "bytes1"
+            },
+            {
+                "name": "birthdate",
+                "type": "string"
+            },
+            {
+                "name": "role",
+                "type": "bytes32"
+            },
+            {
+                "name": "timestamp",
+                "type": "string"
+            }
+        ],
+        "name": "updateUserByLineId",
+        "outputs": [
+            {
+                "name": "result",
+                "type": "int256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "inLineID",
+                "type": "bytes32"
+            }
+        ],
+        "name": "getUserByLineID",
+        "outputs": [
+            {
+                "name": "found",
+                "type": "bool"
+            },
+            {
+                "name": "userAddress",
+                "type": "address"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "password",
+                "type": "string"
+            },
+            {
+                "name": "cid",
+                "type": "bytes32"
+            },
+            {
+                "name": "memberid",
+                "type": "bytes32"
+            },
+            {
+                "name": "role",
+                "type": "bytes32"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "_addressIndices",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    }
+]
